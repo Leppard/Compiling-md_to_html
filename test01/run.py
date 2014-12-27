@@ -94,13 +94,13 @@ def p_factor_text(p):
     elif (len(p) == 3):
         p[0] = str(p[1]) + ' ' + str(p[2])
 
-def p_factor_em(p):
-    '''factor : STAR TEXT STAR'''
-    p[0] = '<em>' + str(p[2]) + '</em>'
+# def p_factor_em(p):
+#     '''factor : STAR TEXT STAR'''
+#     p[0] = '<em>' + str(p[2]) + '</em>'
 
-def p_factor_stg(p):
-    '''factor : DSTAR TEXT DSTAR'''
-    p[0] = '<strong>' + str(p[2]) + '</strong>'
+# def p_factor_stg(p):
+#     '''factor : DSTAR TEXT DSTAR'''
+#     p[0] = '<strong>' + str(p[2]) + '</strong>'
 
 
 def p_error(p):
